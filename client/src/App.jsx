@@ -1,9 +1,13 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import Header from "./components/Header";
 
 const App = () => {
+  const [count, setCount] = useState(0);
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Click me</Button>
+    <div className="min-h-screen">
+      <Header />
+      
     </div>
   )
 }
